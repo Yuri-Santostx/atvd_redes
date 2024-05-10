@@ -1,0 +1,112 @@
+:root{
+    --text-color: #2B3674;
+    --color-buton-links: #3758D0;
+    --color-box-link: #F4F7FE;
+    --color-subt_titlle: #A3AED0;
+    --color-text: #ffffff ;
+
+}
+.login {
+    display: flex;
+    justify-content: space-between;
+}
+.google_login{
+    width: 410px;
+    height: 50px;
+    background-color: var(--color-box-link);
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.google_login:hover{
+    background-color: #c6c6c665;
+}
+.inputs_principal{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 50%; 
+}
+.img_logo img {
+    width: 700px; 
+}
+.Login{
+    font-size: 36px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+.subtext{
+    color: var(--color-subt_titlle);
+}
+.login_but{
+    background-color: var(--color-buton-links);
+    width: 410px;
+    height: 54px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: var(--color-text);
+    font-weight: 700;
+}
+input[type="email"]{
+    width: 410px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    font-size: 20px;
+    text-align: center;
+}
+input[type="tel"]{
+    width: 410px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    font-size: 20px;
+    text-align: center;
+}
+input[type="password"]{
+    width: 410px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid grey;  
+    font-size: 20px;
+    text-align: center;
+}
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 5px; 
+}
+.mant_log{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.criar_conta{ 
+    color: var(--color-buton-links);
+}
+#id_img2 img{
+    border-bottom-right-radius: 200px;
+}
+@media (max-width: 720px){
+    .img_logo img{
+        display: none;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .google_login{
+        display: none;
+    }
+}
